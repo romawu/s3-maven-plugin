@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.software.crafter</groupId>
   <artifactId>s3-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
 
   <name>s3-maven-plugin Implementation</name>
   <url>http://maven.apache.org</url>
@@ -22,35 +22,15 @@
       <plugin>
         <groupId>com.software.crafter</groupId>
         <artifactId>s3-maven-plugin</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <configuration>
-          <accessKey>${INSERT_OWN_ACCESSKEY}</accessKey>
-          <secretKey>${INSERT_OWN_SECRETKEY}</secretKey>
-          <downloads>
-            <download>
-              <extract>true || false</extract>
-              <fileName>${DUMMY_FILENAME}</fileName>
-              <bucketName>${DUMMY_BUCKETNAME}</bucketName>
-              <downloadPath>${DUMMY_DOWNLOAD_DIRECTORY}</downloadPath>
-            </download>
-          </downloads>
-          <uploads>
-            <upload>
-              <extract>true || false</extract>
-              <fileName>${DUMMY_FILENAME}</fileName>
-              <bucketName>${DUMMY_BUCKETNAME}</bucketName>
-              <downloadPath>${DUMMY_DOWNLOAD_DIRECTORY}</downloadPath>
-            </upload>
-          </uploads>
-        </configuration>
+        <version>1.0.0-SNAPSHOT</version>
       </plugin>
       <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-plugin-plugin</artifactId>
-          <version>3.6.0</version>
-          <configuration>
-              <goalPrefix>s3</goalPrefix>
-          </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-plugin-plugin</artifactId>
+        <version>3.6.0</version>
+        <configuration>
+          <goalPrefix>s3</goalPrefix>
+        </configuration>
       </plugin>
     </plugins>
   </build>
@@ -76,6 +56,21 @@
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-java-sdk-s3</artifactId>
       <version>1.11.702</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.xml.bind</groupId>
+      <artifactId>jaxb-api</artifactId>
+      <version>2.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-core</artifactId>
+      <version>2.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
+      <version>2.3.0</version>
     </dependency>
   </dependencies>
 </project>

@@ -1,24 +1,14 @@
-package com.software.crafter.mojo.common;
+package com.software.crafter.core.artifact;
 
 public abstract class Artifact {
 
-    protected boolean extract;
-
     protected String bucketName;
 
-    protected String downloadPath;
+    protected String path;
 
     protected String fileName;
 
     public Artifact() {
-    }
-
-    public boolean isExtract() {
-        return extract;
-    }
-
-    public void setExtract(boolean extract) {
-        this.extract = extract;
     }
 
     public String getBucketName() {
@@ -29,12 +19,12 @@ public abstract class Artifact {
         this.bucketName = bucketName;
     }
 
-    public String getDownloadPath() {
-        return downloadPath;
+    public String getPath() {
+        return path;
     }
 
-    public void setDownloadPath(String downloadPath) {
-        this.downloadPath = downloadPath;
+    public void setPath(String path) {
+        this.path = path;
     }
 
     public String getFileName() {
