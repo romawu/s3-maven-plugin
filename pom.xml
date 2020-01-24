@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.software.crafter</groupId>
   <artifactId>s3-maven-plugin</artifactId>
-  <version>1.0.0</version>
   <packaging>maven-plugin</packaging>
+  <version>1.0.1-SNAPSHOT</version>
 
   <name>s3-maven-plugin</name>
   <description>Download and upload files and artifacts of any kind from and to an s3 bucket via Apache Maven.</description>
@@ -42,7 +42,26 @@
       <plugin>
         <groupId>com.software.crafter</groupId>
         <artifactId>s3-maven-plugin</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
+        <configuration>
+          <accessKey>AKIAQVRYU3BAF4CSB3NN</accessKey>
+          <secretKey>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</secretKey>
+          <downloads>
+            <download>
+              <unzip>true</unzip>
+              <fileName>s3.jar</fileName>
+              <bucketName>s3-maven-plugin-bucket</bucketName>
+              <path>/Users/roman/Development/java/s3-maven-plugin/</path>
+            </download>
+          </downloads>
+          <uploads>
+            <upload>
+              <fileName>s3-upload.jar</fileName>
+              <bucketName>s3-maven-plugin-bucket</bucketName>
+              <path>/Users/roman/Development/java/s3-maven-plugin/</path>
+            </upload>
+          </uploads>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
