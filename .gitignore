@@ -4,3 +4,5 @@ target
 *.jar
 *.svg
 *.png
+
+!s3-maven-plugin-logo.png
