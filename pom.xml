@@ -6,7 +6,7 @@
   <version>1.0.0</version>
   <packaging>maven-plugin</packaging>
 
-  <name>${project.artifactId}</name>
+  <name>s3-maven-plugin</name>
   <description>Download and upload files and artifacts of any kind from and to an s3 bucket via Apache Maven.</description>
   <url>https://github.com/rzett/s3-maven-plugin/</url>
 
