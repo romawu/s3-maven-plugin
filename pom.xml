@@ -1,21 +1,41 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <groupId>com.software.crafter</groupId>
   <artifactId>s3-maven-plugin</artifactId>
-  <packaging>maven-plugin</packaging>
   <version>1.0.0</version>
+  <packaging>maven-plugin</packaging>
 
-  <name>s3-maven-plugin Implementation</name>
-  <url>http://maven.apache.org</url>
+  <name>${project.artifactId}</name>
+  <description>Download and upload files and artifacts of any kind from and to an s3 bucket via Apache Maven.</description>
+  <url>https://github.com/rzett/s3-maven-plugin/</url>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>Roman Zimnik</name>
+      <email>roman@software-crafter.com</email>
+      <organizationUrl>https://software-crafter.com/</organizationUrl>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://https://github.com/rzett/s3-maven-plugin.git</connection>
+    <developerConnection>scm:git:ssh://https://github.com/rzett/s3-maven-plugin.git</developerConnection>
+    <url>https://github.com/rzett/s3-maven-plugin/tree/master</url>
+  </scm>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
   </properties>
-
 
   <build>
     <plugins>

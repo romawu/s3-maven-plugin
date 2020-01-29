@@ -6,6 +6,17 @@ import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugins.annotations.Mojo;
 
+/**
+ * This mojo executes both download goal and upload goal.
+ * Generally just a wrapper, which calls both other two mojos.
+ * @see com.software.crafter.core.mojo.DownloadMojo
+ * @see com.software.crafter.core.mojo.UploadMojo
+ *
+ *
+ * @author Roman Zimnik
+ * @version 1.0.0
+ *
+ */
 @Mojo( name = "execute-all" )
 public class ExecuteAllMojo extends AbstractCustomMojo {
 
