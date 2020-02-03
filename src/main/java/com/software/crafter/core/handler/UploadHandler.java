@@ -1,13 +1,11 @@
 package com.software.crafter.core.handler;
 
 import com.amazonaws.services.s3.AmazonS3Client;
-import com.software.crafter.core.artifact.Download;
 import com.software.crafter.core.artifact.Upload;
 import com.software.crafter.core.common.GoalExecutor;
 import com.software.crafter.core.common.GoalExecutorImpl;
 import com.software.crafter.util.AWSClientFactory;
 import org.apache.maven.plugin.logging.Log;
-import org.apache.maven.plugin.logging.SystemStreamLog;
 
 import java.util.List;
 
