@@ -4,7 +4,7 @@
   <groupId>com.software.crafter</groupId>
   <artifactId>s3-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
 
   <name>s3-maven-plugin</name>
   <description>Download and upload files and artifacts of any kind from and to an s3 bucket via Apache Maven.</description>
@@ -42,7 +42,7 @@
       <plugin>
         <groupId>com.software.crafter</groupId>
         <artifactId>s3-maven-plugin</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.0</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
