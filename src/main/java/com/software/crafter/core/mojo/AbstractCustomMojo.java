@@ -7,6 +7,12 @@ import org.apache.maven.plugins.annotations.Parameter;
 
 import java.util.List;
 
+/**
+ *
+ * @author Roman Zimnik
+ * @version 1.0.0
+ *
+ */
 public abstract class AbstractCustomMojo extends AbstractMojo {
 
     @Parameter( property = "accessKey" )

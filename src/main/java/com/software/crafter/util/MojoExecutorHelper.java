@@ -7,6 +7,10 @@ import org.twdata.maven.mojoexecutor.MojoExecutor;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Roman Zimnik
+ * @version 1.0.0
+ */
 public class MojoExecutorHelper {
 
     /**
@@ -18,6 +22,11 @@ public class MojoExecutorHelper {
         return new MojoExecutor.Element("downloads", getDownloadChildren(downloads));
     }
 
+    /**
+     *
+     * @param downloads
+     * @return
+     */
     private static MojoExecutor.Element[] getDownloadChildren(List<Download> downloads) {
         List<MojoExecutor.Element> children = new ArrayList<>();
         for (Download download : downloads) {
@@ -30,6 +39,11 @@ public class MojoExecutorHelper {
         return childrenArray;
     }
 
+    /**
+     *
+     * @param download
+     * @return
+     */
     private static MojoExecutor.Element parseDownload(Download download) {
         return new MojoExecutor.Element("download",
                     new MojoExecutor.Element("fileName", download.getFileName()),
@@ -46,6 +60,10 @@ public class MojoExecutorHelper {
         return new MojoExecutor.Element("uploads", getUploadChildren(uploads));
     }
 
+    /**
+     * @param uploads
+     * @return
+     */
     private static MojoExecutor.Element[] getUploadChildren(List<Upload> uploads) {
         List<MojoExecutor.Element> children = new ArrayList<>();
         for (Upload upload : uploads) {
@@ -58,6 +76,11 @@ public class MojoExecutorHelper {
         return childrenArray;
     }
 
+    /**
+     *
+     * @param upload
+     * @return
+     */
     private static MojoExecutor.Element parseUpload(Upload upload) {
         return new MojoExecutor.Element("upload",
                     new MojoExecutor.Element("fileName", upload.getFileName()),

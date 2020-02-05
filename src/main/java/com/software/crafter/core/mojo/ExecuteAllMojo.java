@@ -17,7 +17,6 @@ import static org.twdata.maven.mojoexecutor.MojoExecutor.*;
  * @see com.software.crafter.core.mojo.DownloadMojo
  * @see com.software.crafter.core.mojo.UploadMojo
  *
- *
  * @author Roman Zimnik
  * @version 1.0.0
  *

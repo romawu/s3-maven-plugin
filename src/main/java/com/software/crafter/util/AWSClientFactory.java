@@ -5,8 +5,18 @@ import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 
+/**
+ * @author Roman Zimnik
+ * @version 1.0.0
+ */
 public class AWSClientFactory {
 
+    /**
+     *
+     * @param accessKey
+     * @param secretKey
+     * @return
+     */
     public static AmazonS3Client createAmazonS3Client(String accessKey, String secretKey) {
 
         BasicAWSCredentials awsCredentials = new BasicAWSCredentials(accessKey, secretKey);

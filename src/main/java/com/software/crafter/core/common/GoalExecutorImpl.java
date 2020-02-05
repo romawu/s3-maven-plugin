@@ -8,6 +8,12 @@ import com.software.crafter.core.artifact.Upload;
 
 import java.io.File;
 
+/**
+ *
+ * @author Roman Zimnik
+ * @version 1.0.0
+ *
+ */
 public class GoalExecutorImpl implements GoalExecutor {
 
     private AmazonS3Client s3Client;

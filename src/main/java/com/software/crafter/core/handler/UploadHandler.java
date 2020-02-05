@@ -9,6 +9,12 @@ import org.apache.maven.plugin.logging.Log;
 
 import java.util.List;
 
+/**
+ *
+ * @author Roman Zimnik
+ * @version 1.0.0
+ *
+ */
 public class UploadHandler {
 
     private Log log;

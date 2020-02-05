@@ -8,8 +8,11 @@ import org.apache.maven.plugins.annotations.Mojo;
 
 /**
  * This mojo maps the entire process of downloads.
- * They are configured via the corresponding POM file.
+ * Downloads are configured via the corresponding POM file.
  * An introduction and examples can be found in the public GitHub repository.
+ *
+ * @author Roman Zimnik
+ * @version 1.0.0
  *
  */
 @Mojo( name = "download", defaultPhase = LifecyclePhase.GENERATE_RESOURCES)
