@@ -25,9 +25,9 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>com.software.crafter</groupId>
+                <groupId>com.software-crafter</groupId>
                 <artifactId>s3-maven-plugin</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>1.0.0</version>
                 <configuration>
                     <accessKey>${INSERT_OWN_ACCESSKEY}</accessKey>
                     <secretKey>${INSERT_OWN_SECRETKEY}</secretKey>
@@ -55,9 +55,9 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>com.software.crafter</groupId>
+                <groupId>com.software-crafter</groupId>
                 <artifactId>s3-maven-plugin</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>1.0.0</version>
                 <configuration>
                     <accessKey>AKIAWA6VGJY43EAG4YS3N</accessKey>
                     <secretKey>FmlwgsjYBJgB2YmR5TybT8H7V3Osh3d138</secretKey>
