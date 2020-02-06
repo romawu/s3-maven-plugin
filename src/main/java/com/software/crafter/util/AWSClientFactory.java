@@ -13,8 +13,9 @@ public class AWSClientFactory {
 
     /**
      *
-     * @param accessKey
-     * @param secretKey
+     * @param accessKey individual accessKey from your s3 platform.
+     * @param secretKey individual secretKey from your s3 platform.
+     *                  Both need full read and write access.
      * @return
      */
     public static AmazonS3Client createAmazonS3Client(String accessKey, String secretKey) {
