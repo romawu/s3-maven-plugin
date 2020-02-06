@@ -14,7 +14,13 @@
 2. Execute `mvn install`.
 3. Implement the following configuration into your pom file setup.
 
-## POM file configuration
+## Manual execution
+
+1. Executing downloads only: `mvn s3:download`
+2. Executing uploads only: `mvn s3:uploads`
+3. Executing downloads and uploads: `mvn s3:execute-all`
+
+## POM file configuration for execution during build runtime
 
     <build>
         <plugins>
