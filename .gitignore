@@ -4,6 +4,6 @@ target
 *.jar
 *.svg
 *.png
-runner-pom.xml
+local-pom.xml
 
 !s3-maven-plugin-logo.png
