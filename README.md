@@ -69,3 +69,7 @@ Please follow the configuration instructions as described below.
 2. Executing uploads only: `mvn s3:uploads`
 3. Executing downloads and uploads: `mvn s3:execute-all`
 
+## Sources 
+
+1. Maven Guide: https://maven.apache.org/guides/plugin/guide-java-plugin-development.html
+2. Upload to Maven Central Repository: https://maven.apache.org/repository/guide-central-repository-upload.html
