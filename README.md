@@ -73,3 +73,4 @@ Please follow the configuration instructions as described below.
 
 1. Maven Guide: https://maven.apache.org/guides/plugin/guide-java-plugin-development.html
 2. Upload to Maven Central Repository: https://maven.apache.org/repository/guide-central-repository-upload.html
+3. Step by step tutorial: https://medium.com/swlh/step-by-step-guide-to-developing-a-custom-maven-plugin-b6e3a0e09966
